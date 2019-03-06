@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  height: 200px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px;
+  grid-gap: 1em;
+  justify-items: center;
+}
+#rd, #or, #bl, #sl, #gr, #yl {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#rd {
+  background-color: red;
+}
+#or {
+  background-color: orange;
+}
+#bl {
+  background-color: blue;
+}
+#sl {
+  background-color: silver;
+}
+#gr {
+  background-color: green;
+}
+#yl {
+  background-color: yellow;
+}
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
